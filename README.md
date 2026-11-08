@@ -26,7 +26,7 @@ This project aims to:
 
 The application adopts an orchestrator-worker pattern. The central orchestrator (`scanner.py`) initializes AWS API sessions, runs modular checks located inside `audits/`, consolidates security findings, prints human-readable telemetry, and saves the final audit report.
 
-
+```text
 aws-posture-scanner/
 │
 ├── scanner.py                  # Orchestrator & report aggregator
@@ -42,5 +42,4 @@ aws-posture-scanner/
 │
 └── reports/                    # Generated audit logs
     └── scan_YYYYMMDD_HHMMSS.json
-
     
